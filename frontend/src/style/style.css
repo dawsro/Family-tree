@@ -1,0 +1,209 @@
+/*     Node container    */
+#menu {
+    background: #c034db;
+    width: 350px;
+    margin-right: 50px;
+    height: 100vh;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu_node {
+    width: 100%;
+    font-size: 30px;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+.menu_node:hover {
+    background: #db3434 !important;
+}
+
+#menu button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    font-size: 25px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/*     Node     */
+#tree {
+    position: absolute;
+    left: 400px;
+}
+
+.node {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: #3498db;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #2c3e50;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.node pre {
+    font-size: 14px;
+}
+
+/*     PopUp     */
+#popup {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+#form {
+    background: #f9f9f9;
+    width: 500px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+}
+
+.inputGroup {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 10px 0;
+}
+
+label {
+    text-align: left;
+    float: left;
+    width: 30%;
+    margin-right: 15px;
+}
+
+input {
+    width: 60%;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+input[type='date'] {
+    width: 40%;
+}
+
+label[for='gender_male'],
+label[for='gender_female'] {
+    text-align: right;
+    width: 20%;
+    padding: 0;
+    margin: 0;
+}
+
+input[type='radio'] {
+    width: 10%;
+    padding: 0;
+}
+
+select,
+option {
+    border-radius: 0;
+    width: 30%;
+    padding: 8px;
+    margin: 5px 0;
+    text-align: center;
+}
+
+#close_node_list {
+    width: 20px;
+    float: right;
+    font-size: 20px;
+    color: red;
+    font-weight: bolder;
+    text-align: right;
+    cursor: pointer;
+}
+
+#node_list {
+    position: absolute;
+    top: -1000px;
+    left: -1000px;
+    background: #f9f9f9;
+    width: 180px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.node_select {
+    width: 70%;
+    color: black;
+    padding: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.node_select:hover {
+    color: red;
+    font-weight: bold;
+}
+
+#parents_node_list,
+#children_node_list {
+    width: 50%;
+    height: 150px;
+    float: left;
+    font-size: 20px;
+}
+
+.node_link {
+    width: 60%;
+    color: #2980b9;
+    margin: 5px 0;
+    font-size: 18px;
+    cursor: pointer;
+    float: left;
+}
+
+.delete_from_list {
+    color: red;
+    font-weight: bolder;
+    padding: 3px;
+}
+
+#parents_node_list button,
+#children_node_list button {
+    padding: 3px;
+    margin: 0 0 0 10px;
+    font-size: 13px;
+    border-radius: 5px;
+}
+
+/*     General     */
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    background-color: #2980b9;
+    font-size: 15px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
